@@ -120,5 +120,5 @@ pr def hoch
 		di ""
 	}
 	
-	u `master', replace
+	u `master', clear
 end
