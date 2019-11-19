@@ -1,0 +1,16 @@
+v 0.1
+d hoch. Compute ICER and INB
+d
+d
+d Author: JJ Chen
+d Support: jjchen215@gmail.com
+d
+d KW: icer
+d KW: inb
+d
+d Requires: Stata version 13.0
+d
+d Distribution-Date: 20191118
+d
+
+f hoch.ado

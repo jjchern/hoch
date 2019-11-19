@@ -1,0 +1,8 @@
+v 0.1
+d JJ Chen (jjchen215@gmail.com)
+p hoch HOCH - Compute ICER and INB
+* l word-to-show path-or-url [description]
+* t: Directories within site:
+* t path [description]
+* Packages:
+* p pkgname [description]
