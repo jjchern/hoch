@@ -12,9 +12,6 @@ pr def hoch
 	local effect_eq_lhs = subinstr("`effect_eq_lhs'", "(", "", 1)
 	local effect_eq_rhs = subinstr("`effect_eq_rhs'", ")", "", 1)
 	
-	tempfile master
-	save `master', replace
-	
 	di "-----------------------------------------------------------------------"
 	di "The cost regression:"
 	reg `cost_eq_lhs' `cost_eq_rhs', r
@@ -97,6 +94,7 @@ pr def hoch
 		gen de = `de'
 		
 		sc delta_c95 delta_e95, yline(0) xline(0) m(i) c(l) || sc dc de, legend(off) msymbol(D) title(The Confidence Ellipse)
+		drop theta part1_* part2_* delta_* dc de
 		
 		di "-----------------------------------------------------------------------"
 		di ""
@@ -120,5 +118,4 @@ pr def hoch
 		di ""
 	}
 	
-	u `master', clear
 end
