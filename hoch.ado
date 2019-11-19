@@ -12,6 +12,9 @@ pr def hoch
 	local effect_eq_lhs = subinstr("`effect_eq_lhs'", "(", "", 1)
 	local effect_eq_rhs = subinstr("`effect_eq_rhs'", ")", "", 1)
 	
+	tempfile master
+	save `master', replace
+	
 	di "-----------------------------------------------------------------------"
 	di "The cost regression:"
 	reg `cost_eq_lhs' `cost_eq_rhs', r
@@ -116,4 +119,6 @@ pr def hoch
 		di "-----------------------------------------------------------------------"
 		di ""
 	}
+	
+	u `master', replace
 end
