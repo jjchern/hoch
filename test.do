@@ -2,7 +2,6 @@
 * test
 
 net install hoch, from("https://raw.githubusercontent.com/jjchern/hoch/master") replace force
-viewsource hoch.ado
 
 clear
 set more off
@@ -17,3 +16,5 @@ hoch (cost tx) (effect tx), icer fieller
 hoch (cost tx) (effect tx), icer fieller cefig
 
 hoch (cost tx) (effect tx), icer fieller cefig inb lambda(100000)
+
+hoch (cost tx) (effect tx), icer fieller cefig inb lambda(5000)
